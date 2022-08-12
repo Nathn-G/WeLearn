@@ -20,17 +20,17 @@ Notre plus grand défi technique a été la découverte de la technologie Web3 e
 ## Installation
 *Expliquez, étape par étape, comment quelqu'un peut installer votre projet et l’utiliser Le jury utilisera principalement MacOS, Ubuntu, Android et iOS. Mettre en place un docker / docker-compose est une bonne idée pour permettre à quelqu'un de tester facilement le projet.*
 
-Dans un premier temps, il est nécessaire de créer un fichier `.env` dans le dossier `we-learn-front` et `WeLearn-api`  
-Dans le `.env` du dossier `we-learn-front`, il est nécessaire d'écrire la ligne suivante, en remplacement l'adresse par votre adresse locale:  
+Dans un premier temps, il est nécessaire de créer un fichier `.env` dans le dossier `WeLearnFront` et `WeLearnApi`  
+Dans le `.env` du dossier `WeLearnFront`, il est nécessaire d'écrire la ligne suivante, en remplacement l'adresse par votre adresse locale:  
 `VITE_REACT_URL = 'http://10.101.49.122:8080'`  
 
-Dans le `.env` du dossier `WeLearn-api`, il est nécessaire d'écrire les lignes suivantes, sans les modifier:   
+Dans le `.env` du dossier `WeLearnApi`, il est nécessaire d'écrire les lignes suivantes pour avoir accès à la base de données et à l'api starton:   
 ```
-db_name=welearn
-db_user=welearn
-db_password=mangetafille
-db_host=54.36.183.102
-starton_key=BCyavFNFISpxz6F2QYvFFkjOHAsg2w0X
+db_name=
+db_user=
+db_password=
+db_host=
+starton_key=
 ```
   
 Il suffit simplement de lancer la commande suivante à la racine du projet :

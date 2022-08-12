@@ -1,16 +1,16 @@
 FROM node:alpine
 
-WORKDIR /we-learn-front/
+WORKDIR /WeLearnFront/
 
-# COPY we-learn-front/package.json ./
-COPY we-learn-front/ ./
+# COPY WeLearnFront/package.json ./
+COPY WeLearnFront/ ./
 
 RUN npm i
 
-WORKDIR /WeLearn-api/
+WORKDIR /WeLearnApi/
 
-# COPY WeLearn-api/package.json ./
-COPY WeLearn-api/ ./
+# COPY WeLearnApi/package.json ./
+COPY WeLearnApi/ ./
 
 RUN npm i
 
@@ -20,10 +20,10 @@ COPY start.sh ./start.sh
 run chmod +x start.sh
 run ./start.sh
 
-WORKDIR /we-learn-front/
+WORKDIR /WeLearnFront/
 
 run ls 
-# WORKDIR /WeLearn-api/
+# WORKDIR /WeLearnApi/
 # CMD ["npm", "start"]
 
 # COPY start.sh ./start.sh

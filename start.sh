@@ -1,9 +1,9 @@
 #!/bin/sh
 
-cd ../WeLearn-api
+cd ../WeLearnApi
 npm i
 npm start &
 
-cd ../we-learn-front
+cd ../WeLearnFront
 npm i
 npm run dev
